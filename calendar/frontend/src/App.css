@@ -1,3 +1,116 @@
+/* ブラウザによるデフォルトのmarginとpaddingの差異を
+無くすために、ユニバーサルセレクタを利用して初期化をします。 */
+html {
+  height: 100%;
+  width: 100%;
+  font-family:Arial;
+}
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body{
+	color: #333333;
+	background-color: #FFFFFF;
+	font-size: 100%;
+	line-height: 1.7;
+	-webkit-text-size-adjust: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.margin {
+  margin: 10px;
+  height: 100%;
+}
+
+/* =============================== */
+
+
+.container {  
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 2px 2px;
+  grid-auto-flow: row;
+  text-align: center;
+  margin: 5px;
+  padding: 3px;
+  background-color: rgb(40,44,52);
+}
+
+.container p {
+  height: 60px;
+  width: auto;
+  /* margin: 5px; */
+  padding: 10px 10px;
+  background-color: aqua;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* =============================== */
+.calendar-container {
+  width: auto;
+  height: 100vh;
+  margin: 0 auto;
+  border-radius: 5px;
+  background: #f6f5f4;
+  color: #1a1a1a;
+}
+h1 {
+  height: 10vh;
+  line-height: 80px;
+  text-align: center;
+  font-size: 24px;
+  margin: 0;
+}
+.calendar {
+  padding: 0 10px 10px 10px;
+  height: 100vh;
+}
+table {
+  width: 100%;
+}
+th, td {
+  text-align: center;
+  padding: 1%;
+}
+  th {
+  font-weight: normal;
+  font-size: 14px;
+}
+td {
+  font-weight: bold;
+}
+.day *:first-child {
+  color: #ff838b;
+}
+.day *:last-child {
+  color: #6fb5ff;
+}
+
+
+
+
+
+
+
+
+
+
 .App {
   text-align: center;
 }
